@@ -6,7 +6,7 @@ Christian Luis Malabanan Ebalobo
 BS Computer Science
 
 ## Live Website
-[Visit Live Website]()
+[Visit Live Website](https://christianebalobo.github.io/EBALOBO-CMSC-100-Exer-2/)
 
 ---
 
