@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;  /*1% of browser window height*/
+    width: 100%;    /*occupies full (100%) width of parent element*/
+    margin: 0px;
+    
+    color:aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-image: url('images/background2.gif');
+    background-repeat: inherit;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;    /* vertically centers image and text */
+    gap: 30px;              /* space between image and text */
+    max-width: 1000px;
+    margin: 0 auto;         /* centers the entire container */
+    padding: 20px;
+}
+
+.profile-text {
+    flex: 1;               /* allows text to take remaining space */
+}
+
+
+/*---------------Navigation Bar Styling---------------*/
+.nav-container{
+    background-color: rgb(39, 45, 58);
+    display: flex;
+    justify-content: space-between;     /* logo left, navbar right*/
+    align-items: center;
+    padding: 0 50px;
+    height: 75px;
+}
+
+.navbar ul{
+    list-style-type: none;              /*remove bullet points*/
+    padding: 0px;
+    margin: 0px; 
+    display:flex;                       /*makes list items horizontal*/
+    gap:0;                              /*remove space between items*/    
+}
+
+.navbar a{ /*Navigation Bar Text Styling*/
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+
+    font-family: Agency FB;
+    font-size: 19px;
+    font-weight: 400;
+
+    transition: al 0.3s ease;
+}
+
+.navbar a:hover{
+    background-color: rgb(50, 64, 101);
+    transform: scale(1.05);
+    transition: all 0.3s ease;          /*for smooth animation*/
+
+}
+
+/*---------------Logo Styling---------------*/
+
+.glow{
+    filter: drop-shadow(0 0 15px rgb(255, 255, 255));
+}
+
+.glow:hover{
+    filter: drop-shadow(0 0 10px rgb(157, 192, 255));
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+}
+ 
+.glow{
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+/*---------------Projects---------------*/
+.projects-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: aliceblue;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Agency FB', sans-serif;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.project-gif {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    transition: all 0.3s ease;
+}
+
+.project-gif:hover {
+    filter: drop-shadow(0 0 20px rgb(157, 192, 255));
+    transform: scale(1.05);
+}
+
+.project-title {
+    color: white;
+    font-size: 20px;
+    margin: 15px 0 5px;
+    font-family: 'Agency FB', sans-serif;
+}
+
+.project-description {
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+
+footer{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.back-to-top {
+    position: fixed; /*to keep button fixed to screen*/
+    bottom: 20px; 
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
